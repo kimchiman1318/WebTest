@@ -13,12 +13,13 @@
       padding:20px;
       margin:20px;
       display:block;
-      width: 500px;
+
     }
 
     body
       {
         background-color: darkgray;
+        margin:0;
       }
 
     a {
@@ -35,6 +36,28 @@
       color:red;
     }
 
+    #grid
+    {
+      display:grid;
+      grid-template-columns: 400px 1fr;
+
+    }
+    #grid ol{
+      border-right: 1px solid Tomato;
+      width:150px
+      margin:0;
+      padding-left: 33px;
+      padding-top: 20px;
+    }
+
+    #grid #article{
+      padding-left: 10px;
+    }
+
+
+
+
+
     .saw {
       color:gray;
     }
@@ -50,36 +73,36 @@
 <body>
  <h1><a href="index.html"><b>Web</b></a><h1>
 
+<div id="grid">
+  <ol>
+       <li><a href="1.html" class="saw" id="active">HTML</a></li>
+       <li><a href="2.html" class="saw">CSS</a></li>
+       <li><a href="3.html">JavaScript</a></li>
+       <li><a href="down.html">3d download</a></li>
+       <li><a href="index.html">back</a></li>
 
-<ol>
+       <li style="background-color:Tomato; width: 300px;">Tomato</li>
+       <li style="background-color:Orange; width: 300px;">Orange</li>
+       <li style="background-color:DodgerBlue; width: 300px;">DodgerBlue</li>
+       <li style="background-color:MediumSeaGreen; width: 300px;">MediumSeaGreen</li>
+       <li style="background-color:Gray; width: 300px;">Gray</li>
+       <li style="background-color:SlateBlue; width: 300px;">SlateBlue</li>
+       <li style="background-color:Violet; width: 300px;">Violet</li>
+       <li style="background-color:LightGray; width: 300px;">LightGray</li>
+ </ol>
 
-  <li><a href="1.html" class="saw" id="active">HTML</a></li>
-  <li><a href="2.html" class="saw">CSS</a></li>
-  <li><a href="3.html">JavaScript</a></li>
-  <li><a href="down.html">3d download</a></li>
-  <br><br><br>
-  <li><a href="1.html">back</a></li>
-  <li style="background-color:Tomato; width: 300px;">Tomato</li>
-  <li style="background-color:Orange; width: 300px;">Orange</li>
-  <li style="background-color:DodgerBlue; width: 300px;">DodgerBlue</li>
-  <li style="background-color:MediumSeaGreen; width: 300px;">MediumSeaGreen</li>
-  <li style="background-color:Gray; width: 300px;">Gray</li>
-  <li style="background-color:SlateBlue; width: 300px;">SlateBlue</li>
-  <li style="background-color:Violet; width: 300px;">Violet</li>
-  <li style="background-color:LightGray; width: 300px;">LightGray</li>
-
-
-
-
-</ol>
-
-
-<h2>HTML</h2>
-<p><a href="https://naver.com" target="_blank" title="naver링크">네이버</a><strong>스트롱태그<u>u태그</u>strong fin</strong>, aaa
-<img src="1601613123.png"width="50%" height="50%">
+  <div id="article">
+      <h2>HTML</h2>
+      <p><a href="https://naver.com" target="_blank" title="naver링크">네이버</a><strong>스트롱태그<u>u태그</u>strong fin</strong>, aaa
+      <img src="1601613123.png"width="50%" height="50%">
+      </p>
+      <p style="margin-top:45px;">p css Style
+  </div>
 </p>
-<p style="margin-top:45px;">p css Style
-</p>
+</div>
+
+
+
 <br>
 <br>
 <input type="checkbox" name="test" value="">
