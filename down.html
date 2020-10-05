@@ -31,6 +31,17 @@
         text-align:center;
       }
 
+      img{
+        width:25%;
+        height:25%;
+        -webkit-transition: width 4s, height 4s;
+        transition: widht 4s, height 4s;
+      }
+      img:hover{
+        width:250%;
+        height:250%;
+      }
+
       #grid{
         display: grid;
         grid-template-columns: 250px 600px;
@@ -71,8 +82,7 @@
       <li><a href="1.html">HTML</a></li>
       <li><a href="2.html">CSS</a></li>
       <li><a href="3.html">JavaScript</a></li>
-      <li><a href="down.html" id="active">3d download</a></li>
-      <li><a href="ZBrush ScreenGrab07.jpg">zbrush_1</a></li>
+      <li><a href="down.html" id="active">Gallery</a></li>
       <li><a href="#">zbrush_2</a></li>
       <li><a href="#">zbrush_3</a></li>
       <li><a href="1.html">back</a></li>
@@ -83,6 +93,7 @@
   <div id="article">
     <h2>3D charactor</h2>
     <p>3d modeling gallery</p>
+    <img src="ZBrush ScreenGrab07.jpg" alt="This is my first made character as Zbrush">
   </div>
 </div>
   </body>
