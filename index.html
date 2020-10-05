@@ -13,12 +13,11 @@
       padding:20px;
       margin:20px;
       display:block;
-      width: 500px;
+
     }
 
 /*
     h1, a{
-
       border:5px solid red;
     }
 */
@@ -31,16 +30,11 @@
       border-width:5px;
       border-color:red;
       border-style:solid;
-
     }
-
-
-
     a{
       border-width:3px;
       border-color:red;
       border-style:solid;
-
     }
 */
     /*
@@ -52,6 +46,7 @@
     body
       {
         background-color: darkgray;
+        margin:0;
       }
 
     a {
@@ -62,6 +57,24 @@
     h2{
       font-size:60px;
       text-align:center;
+    }
+
+
+    #grid{
+      display: grid;
+      grid-template-columns: 400px 1fr;
+    }
+
+    #grid ol{
+      border-right: 1px solid DodgerBlue;
+      width: 350px;
+      margin: 0;
+      padding-left: 33px;
+      padding-top: 20px;
+    }
+
+    #grid #article{
+      padding-left: 10px;
     }
 
     #active{
@@ -86,33 +99,30 @@
 <!-- 태그 선택자 < . 클래스선택자 < ID #선택자(id값은 한번만 등장해야함)-->
 
 <body>
- <h1 id="active"><a href="index.html"><b>Web</b></a><h1>
+ <h1 id="active"><a href="index.html"><b>Web</b></a></h1>
 
-
-<ol>
-
-  <li><a href="1.html" class="saw">HTML</a></li>
+ <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw">HTML</a></li>
   <li><a href="2.html" class="saw">CSS</a></li>
-  <li><a href="3.html">JavaScript</a></li>
-  <li><a href="down.html">3d download</a></li>
-  <br><br><br>
-  <li><a href="1.html">back</a></li>
-  <li style="background-color:Tomato; width: 300px;">Tomato</li>
-  <li style="background-color:Orange; width: 300px;">Orange</li>
-  <li style="background-color:DodgerBlue; width: 300px;">DodgerBlue</li>
-  <li style="background-color:MediumSeaGreen; width: 300px;">MediumSeaGreen</li>
-  <li style="background-color:Gray; width: 300px;">Gray</li>
-  <li style="background-color:SlateBlue; width: 300px;">SlateBlue</li>
-  <li style="background-color:Violet; width: 300px;">Violet</li>
-  <li style="background-color:LightGray; width: 300px;">LightGray</li>
+      <li><a href="3.html">JavaScript</a></li>
+      <li><a href="down.html">3d download</a></li>
+      <li style="background-color:Tomato; width: 150px;">Tomato</li>
+      <li style="background-color:Orange; width: 150px;">Orange</li>
+      <li style="background-color:DodgerBlue; width: 150px;">DodgerBlue</li>
+      <li style="background-color:MediumSeaGreen; width: 150px;">MediumSeaGreen</li>
+      <li style="background-color:Gray; width: 150px;">Gray</li>
+      <li style="background-color:SlateBlue; width: 150px;">SlateBlue</li>
+      <li style="background-color:Violet; width: 150px;">Violet</li>
+      <li style="background-color:LightGray; width: 150px;">LightGray</li>
 
-</ol>
+    </ol>
 
-
-<h2>HTML</h2>
-<h1 style="text-align=center;">CSS</h1>Test<a href="https://naver.com">링크</a>
-<h1>
-<br><br><br>
+    <div id="article">
+      <h2>HTML</h2>
+      <h1 style="text-align=center;">CSS</h1>Test<a href="https://naver.com">링크</a>
+      <h1>
+      <br><br><br>
 
 
 
@@ -126,5 +136,9 @@
 <input type="checkbox" name="test" value="">
 <input type="checkbox">
 <input type="checkbox">
+</div>
+</div>
+
+
 </body>
 </html>
