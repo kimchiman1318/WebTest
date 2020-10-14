@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <meta charset="utf-8">
 
@@ -22,10 +22,34 @@
         font-family: sans-serif;
       }
 
+      body{
+        background-color: darkgray;
+        margin:0;
+      }
+
+      a {
+        color:black;
+        text-decoration: none;
+      }
+
+      img{
+        width:25%;
+        height:25%;
+        -webkit-transition: width 4s, height 4s;
+        transition: widht 4s, height 4s;
+      }
+      img:hover{
+        width:100%;
+        height:100%;
+      }
+
       .header{
           background-color: #6E90E6;
         color: black;
         padding: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
       }
 
       .menu ul{
@@ -35,6 +59,7 @@
       }
 
       .menu li{
+        font-weight: 600;
         padding: 8px;
         margin-bottom: 8px;
         background-color: #93E6B5;
@@ -47,7 +72,7 @@
       }
 
       .aside{
-        background-color: #93E6B5
+        background-color: #D9B296;
         padding:15px;
         color:black;
         text-align: center;
@@ -56,11 +81,12 @@
       }
 
       .footer{
-        background-color: #93E6B5;
+        background-color: #D9B296;
         color:black;
         text-align: center;
         font-size: 14px;
         padding: 15px;
+        margin: 15px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       }
 
@@ -89,11 +115,11 @@
 
     </style>
 
-
+<!--https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints-->
   <body>
 
     <div class="header">
-      <h1>3D charactor</h1>
+      <h1><a href="index.html">3D charactor</a></h1>
     </div>
 
     <div class="row">
@@ -104,12 +130,26 @@
           <li>3D object</li>
           <li>2D Gallery </li>
         </ul>
-
       </div>
 
+      <div class="col-6">
+        <h1>Main box</h1>
+        <p><img src="ZBrush ScreenGrab07.jpg" alt="This is my first made character as Zbrush"></p>
+      </div>
+      <div class="col-3 right">
+        <div class="aside">
+          <h1>Right Area</h1>
+          <p>Test1</p>
+          <p>Test2</p>
+          <p>Test3</p>
+        </div>
+      </div>
     </div>
 
 
+    <div class="footer">
+      <p>footer Area</p>
+    </div>
 
 
 
@@ -120,5 +160,6 @@
 
 
 <!--https://pegaro.site/font-family/
-フォントファミリー-->
+フォントファミリー
+最後の課題はチームで-->
 </html>
