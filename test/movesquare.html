@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+
+<style>
+
+  div{
+    width:100px;
+    height:100px;
+    background:red;
+    position: relative;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 4s;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  @keyframes example {
+    0% {background-color:red; left:0px; top:0px;}
+    25% {background-color:yellow; left:200px; top:0px;}
+    50% {background-color:blue; left:200px; top:200px;}
+    75% {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+
+/*
+  @-webkit-keyframes mymove{
+    from {top:0px;}
+    to {top:200px;}
+  }
+
+  @keyframes mymove{
+    from {top:0px;}
+    to {top:200px;}
+  }
+  */
+</style>
+
+
+  </head>
+  <body>
+    <h1>test</h1>
+
+    <h1>the @keyframes Rule</h1>
+
+    <p><strong>Note:</strong>상하 움직임</p>
+    <div></div>
+  </body>
+</html>

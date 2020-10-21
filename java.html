@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>JavaScript</h2>
+
+  <p>자바 데이터 타입</p>
+  <p id="demo"></p>
+  <script>
+  var x = 100+"점";
+  document.getElementById("demo").innerHTML = x;
+  </script>
+
+  <script>
+    var score;
+    var date=null;
+    document.write(typeof score+"<br>");
+    document.write(typeof 123+"<br>");
+    document.write(typeof 12.32+"<br>");
+    document.write(typeof date+"<br>");
+    document.write(typeof "글씨"+"<br>");
+    document.write(typeof false+"<br>");
+    document.write(typeof [10, 30, 50]+"<br>");
+    document.write(typeof {office:'a1122'}+"<br>");
+
+  </script>
+
+
+  <h2>증감 연산자</h2>
+  <p id ="demo"></p>
+
+  <script type="text/javascript">
+    var a =1;
+    var b = 2;
+    var c=d=0;
+    c=101%4;
+
+    document.write("101%4 = "+c+"<br>");
+    document.write("++a = = "+ ++a +"<br>");
+    document.write("a++ = = "+ a++ +"<br>");
+    document.write("a = = "+ a +"<br>");
+    document.write("b = = "+ b +"<br>");
+    document.write("b-- = = "+ b-- +"<br>");
+    document.write("b = = "+ b +"<br>");
+
+  </script>
+
+  <script>
+
+    pw =prompt('비밀번호 입력')
+    if (pw == '1318') {
+      alert('비밀번호 일치')
+    }
+    else {
+      alert('비밀번호 틀림')
+    }
+
+  </script>
+
+
+  <script>
+    function bmi_cal(){
+      var height = Number(prompt('키 입력'));
+      var height_change = height/100;
+      var weight =Number(prompt('무게 입력'));
+      var user_BMI = weight/(height_change * height_change);
+      var user_bmi = Math.round(user_BMI * 10) /10; //소수점 반환
+      var healthy_weight = (height - 100) *0.9;  // 체중계산
+      var bmi_output;
+      if (user_BMI <18.5) {
+        bmi_output ="bmi = " + user_bmi + "<br>"+ "저체중, 적정체중 : " + healthy_weight;
+      }
+      else if (user_BMI <23) {
+        bmi_output ="bmi = " + user_bmi + "<br>"+ "정상, 적정체중 : " + healthy_weight;
+      }
+      else if (user_BMI < 25) {
+        bmi_output ="bmi = " + user_bmi + "<br>"+ "과제중, 적정체중 : " + healthy_weight;
+      }
+      else if (user_BMI < 30) {
+        bmi_output ="bmi = " + user_bmi + "<br>"+ "비만, 적정체중 : " + healthy_weight;
+      }
+      else if (user_BMI >= 30) {
+        bmi_output ="bmi = " + user_bmi + "<br>"+ "고도비만, 적정체중 : " + healthy_weight;
+      }
+      return alert(bmi_output);
+    }
+
+    bmi_cal();
+  </script>
+
+
+  <h2>자바 함수</h2>
+  <p>지역변수</p>
+  <p id="demoFuntion"></p>
+
+  <script>
+    var num1 = 300,
+        num2 = 400,
+        name = "우 흥";
+
+    function sample(){
+      var num1 = 100,
+          num2 = 200;
+      return name + "<br>" + num1;
+    }
+
+    document.getElementById("demoFuntion").innerHTML = sample();
+  </script>
+
+
+  <h2>배열</h2>
+  <p>배열삽입 푸시</p>
+  <p id="demoArray"></p>
+
+  <script>
+    var arr = [1,2,3,4,5,6,7];
+    arr.push(9);
+    arr = arr.concat([8,9]);
+    arr.unshift(9); // 첫번째에 삽입
+    arr.splice(3,0,9);  // 3번째, 0은 그다음번 삭제(1이면 4번째) , 9는 3번째 자리에 삽입
+    arr.shift(); // 첫번째 삭제
+    arr.pop();  // 가장 마지막 배열 삭제
+    arr.sort(); // 숫자 솔트
+    alert(arr);
+    document.getElementById("demoArray").innerHTML = arr;
+  </script>
+
+  <script language="javascript">
+    var delay = 3000
+    var curindex =0
+    var randomimg = new Array()
+        randomimg[0] = "0.jpg"
+        randomimg[1] = "1.jpg"
+        randomimg[2] = "2.jpg"
+        randomimg[3] = "3.jpg"
+        randomimg[4] = "4.jpg"
+        randomimg[5] = "5.jpg"
+
+    // 난수 발생한 값을 초기 값을 저장해 놓음
+    var preload = new Array()
+    for (n = 0; n < randomimg.length; n++) {
+      preload[n] = new Image()
+      preload[n].src = randomimg[n]
+    }
+    document.write('<img src="' + preload[0].src+'">')
+
+
+    // 랜덤 이미지 방출
+    document.write('<center>');
+    document.write('<img name = "defaultImage" src = "' +randomimg[Math.floor(Math.random() * (randomimg.length))] + '">');
+
+
+    function rotateImage()
+    {
+      if (curindex==(tempindex=Math.floor(Math.random() * (randomimg.length)))) {
+        curindex=curindex==0? 1: curindex-1
+      }
+      else
+      curindex=tempindex
+        document.images.defaultImage.src=randomimg[curindex]
+    }
+    setInterval("rotateImage()", delay)
+
+
+
+  </script>
+  <p align = "center">랜덤 이미지</p>
+  <a href="http://javascriptkit.com">자바 오픈코드</a>
+
+</body>
+</html>
