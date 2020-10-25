@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <style>
       *{
@@ -88,6 +89,17 @@
         background-color: #E8CAE7;
       }
 
+
+      .center{
+        background-color: #D9B296;
+        padding:15px;
+        color:black;
+        text-align: center;
+        font-size: 15px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+
       .aside{
         background-color: #D9B296;
         padding:15px;
@@ -129,73 +141,216 @@
 
       }
 
+      #myBtn {
+      display: none;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background: orange;
+      color: #fff;
+      cursor: pointer;
+      padding: 7px;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      font-size: 16px;
+      }
+      #myBtn:hover {
+      background:#0071bc;
+      }
+
+
+
+
+
 
     </style>
 
 <!--https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints-->
-  <body>
+  </head><body>
 
-    <div class="header">
-      <h1><a href="index.html">3D charactor</a></h1>
+    <div class="header" id="header">
+      <h1><a href="#">3D Modeling Gallery</a></h1>
     </div>
 
     <div class="row">
       <div class="col-3 menu">
         <ul>
-          <li>3D character</li>
-          <li>3D background</li>
-          <li>3D object</li>
-          <li>2D Gallery </li>
+          <li><a href="#num0">3D Max 모델링1</a></li>
+          <li><a href="#num1">3D Max 모델링2</a></li>
+          <li><a href="#num2">Blender 모델링</a></li>
+          <li><a href="#num3">Zbrush 모델링1</a></li>
+          <li><a href="#num4">Zbrush 모델링2 </a></li>
+          <li><a href="#num5">기타 모델링 </a></li>
         </ul>
       </div>
 
       <div class="col-6">
-        <h1>Main box</h1>
-        <p><a href="ZBrush ScreenGrab07.jpg"> <img src="ZBrush ScreenGrab07.jpg" alt="This is my first made character as Zbrush"></p></a>
-        <p><a href="1601613123.png"> <img src="1601613123.png" alt="This is my first made character as Zbrush"></p></a>
+            <div class="center" id="num0">
+              <h1>3D max 게임 첫번째 케릭터</h1>
+
+              <p><a href="./mainTest_files/max1.png"> <img src="./mainTest_files/max1.png"></a></p>
+              <strong>제작기간 </strong> : 3개월 <br>
+              <strong>사용 툴 </strong> : 3DsMax, BodyPainter
+              <br><br>
+              <strong><h3>케릭터 UV Map</h3></strong>
+              <p><a href="./mainTest_files/max1.bmp"> <img src="./mainTest_files/max1.bmp"</a></p>
+
+            </div>
+            <br>
+            <br>
+
+            <div class="center" id="num1">
+              <h1>3D max 게임 두번째 케릭터</h1>
+
+              <p><a href="./mainTest_files/max2.png"> <img src="./mainTest_files/max2.png"></a></p>
+              <strong>제작기간 </strong> : 1개월 <br>
+              <strong>사용 툴 </strong> : 3DsMax, BodyPainter
+              <br><br><br>
+              <strong><h3>케릭터 UV Map</h3></strong>
+
+              <strong><p>바디</p></strong>
+              <p><a href="./mainTest_files/body.png"> <img src="./mainTest_files/body.png"></a></p>
+
+              <strong><p>헤어</p></strong>
+              <p><a href="./mainTest_files/hair.png"> <img src="./mainTest_files/hair.png"></a></p>
+
+              <strong><p>장비</p></strong>
+              <p><a href="./mainTest_files/weaponarmsDiffuseMap.png"> <img src="./mainTest_files/weaponarmsDiffuseMap.png"></a></p>
+
+            </div>
+            <br>
+            <br>
+
+            <div class="center" id="num2">
+              <h1>Blender 게임 케릭터</h1>
+
+              <p><a href="./mainTest_files/blender.png"> <img src="./mainTest_files/blender.png"></a></p
+              <strong>제작기간 </strong> : 11일 <br>
+              <strong>사용 툴 </strong> : blender
+              <br><br>
+
+            </div>
+            <br>
+            <br>
+
+            <div class="center" id="num3">
+              <h1>Zbrush 피규어 모델링 첫번째</h1>
+
+              <p><a href="./mainTest_files/ZBrush ScreenGrab07.jpg"> <img src="./mainTest_files/ZBrush ScreenGrab07.jpg" alt="This is my first made character as Zbrush"></a></p>
+              <strong>제작기간 </strong> : 5일 <br>
+              <strong>사용 툴 </strong> : Zbrush, Blender
+              <br><br>
+
+            </div>
+            <br>
+            <br>
 
 
+            <div class="center" id="num4">
+              <h1>Zbrush 피규어 모델링 두번째</h1>
+
+              <p><a href="./mainTest_files/zb2.jpg"> <img src="./mainTest_files/zb2.jpg"></a></p>
+              <strong>제작기간 </strong> : 제작중 <br>
+              <strong>사용 툴 </strong> : Zbrush, Blender
+              <br><br>
+
+            </div>
+            <br>
+            <br>
+
+
+            <div class="center" id="num5">
+              <h1>기타 모델링</h1>
+
+              <p><a href="./mainTest_files/Axe.png"> <img src="./mainTest_files/Axe.png"></a></p>
+
+              <br><br>
+
+            </div>
+
+
+<!--
         <div class="gallery">
-           <a target="_blank" href="ZBrush ScreenGrab07.jpg"><img src="ZBrush ScreenGrab07.jpg" alt=""></a>
+           <a target="_blank" href="./mainTest_files/ZBrush ScreenGrab07.jpg"><img src="./mainTest_files/ZBrush ScreenGrab07.jpg" alt=""></a>
             <div class="desc">
               Image Text1
             </div>
         </div>
         <div class="gallery">
-           <a target="_blank" href="ZBrush ScreenGrab07.jpg"><img src="ZBrush ScreenGrab07.jpg" alt=""></a>
+           <a target="_blank" href="./mainTest_files/ZBrush ScreenGrab07.jpg"><img src="./mainTest_files/ZBrush ScreenGrab07.jpg" alt=""></a>
             <div class="desc">
               Image Text2
             </div>
         </div>
-
+-->
 
 
 
       </div>
       <div class="col-3 right">
         <div class="aside">
-          <h1>Right Area</h1>
-          <p>Test1</p>
-          <p>Test2</p>
-          <p>Test3</p>
+          <h1>현재 사용 하는 툴</h1>
+          <p>Zbrush</p>
+          <p>Blender</p>
+          <p>Maya</p>
+          <p>BodyPainter</p>
         </div>
       </div>
     </div>
 
 
+    <!--
+    <button onclick="topFunction()" id="myBtn" title="위로 가기">Top</button>
+    <script type="text/javascript">
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+  <div style="cursor:pointer;" onclick="window.scrollTo(0,0);">TOP</div>
+  -->
+
+  <div class="row">
+    <div class="col-3 menu" style="position: fixed; bottom: 150px; left: 0px;">
+      <a href="#header">
+        <ul>
+          <li><b> 맨 위로 가기</a></b></li>
+        </ul>
+
+    </div>
+  </div>
+
     <div class="footer">
-      <p>footer Area</p>
+      <b><p>E-Mail : harukasu4409@yahoo.co.jp <br>WepPage : <a href="https://harukasu.tk/">harukasu.tk</a> </p></b>
     </div>
 
 
 
 
 
-  </body>
+
 
 
 
 <!--https://pegaro.site/font-family/
-フォントファミリー
-最後の課題はチームで-->
-</html>
+フォントファミリー参考
+最後のバンダイナムコのプロジェクトはまで１１月末まで-->
+
+<canvas id="__gesture_canvas__" width="0" height="0" style="z-index: 100000000; position: fixed; background: transparent !important; top: 0px; left: 0px;"></canvas><span id="__gesture_preview__" style="z-index: 100000001; position: absolute; background: rgba(255, 255, 225, 0.85); margin: 0px; border: 1px solid black; white-space: nowrap; display: none;"></span></body></html>
